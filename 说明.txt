@@ -1,3 +1,4 @@
 1.Party_Shake_UI 这个是我用来试整UI的
 2.PartyShake 这个是客户端用来试通讯的。= =||本来该成有service的我弄丢了
 3.PartyShake_server server你懂的
+4.试试GITHUB

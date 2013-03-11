@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Login_UserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:ems="10"
+        android:hint="@string/user_name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Login_ServerIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Login_UserId"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Login_UserId"
+        android:ems="10"
+        android:hint="@string/server_ip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Login_UserId"
+        android:layout_alignBottom="@+id/Login_UserId"
+        android:layout_alignParentLeft="true"
+        android:text="@string/user_name"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Login_ServerIp"
+        android:layout_alignBottom="@+id/Login_ServerIp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/server_ip"/>
+
+    <Button
+        android:id="@+id/Login_LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Login_ServerIp"
+        android:text="@string/login" />
+
+</RelativeLayout>

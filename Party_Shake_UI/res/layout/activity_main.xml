@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:background="#ff2197db">
+    
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/login_pic" />
+        
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"  
+        android:background="#ffffffff"
+        android:layout_below="@id/loginImage"
+        android:orientation="vertical">    
+        <!--  android:background="@drawable/login_input"-->
+
+
+        <EditText
+            android:id="@+id/Login_UserId"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:background="@null"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="@string/hint_luIp"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <EditText
+            android:id="@+id/Login_ServerIp"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:background="#00ffffff"
+            android:gravity="center_vertical"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="#ff1d1d1d"
+            android:textColorHint="#ff666666"
+            android:hint="@string/hint_lsIp"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center"
+        android:paddingTop="5.0dip"
+        android:background="#ff97d9f1" 
+        android:text="@string/button_login"
+        android:textSize="20dp"/>
+        <!-- 这里写注释
+        android:background="@drawable/chat_send_button_bg"
+        -->
+</RelativeLayout>
